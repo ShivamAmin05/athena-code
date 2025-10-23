@@ -18,7 +18,7 @@
 // [RosTeamWorkspace](https://github.com/StoglRobotics/ros_team_workspace) repository.
 //
 
-#include "drive_controllers/swerve_drive_controller.hpp"
+#include "athena_drive_controllers/swerve_drive_controller.hpp"
 
 #include <limits>
 #include <memory>

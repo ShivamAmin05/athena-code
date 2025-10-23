@@ -27,7 +27,7 @@
 
 #include "controller_interface/controller_interface.hpp"
 #include "swerve_drive_controller_parameters.hpp"
-#include "drive_controllers/visibility_control.h"
+#include "athena_drive_controllers/visibility_control.h"
 #include "rclcpp_lifecycle/node_interfaces/lifecycle_node_interface.hpp"
 #include "rclcpp_lifecycle/state.hpp"
 #include "realtime_tools/realtime_buffer.h"

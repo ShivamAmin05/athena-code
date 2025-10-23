@@ -6,8 +6,8 @@
 // Unauthorized copying of this file, via any medium is strictly prohibited.
 // The file is considered confidential.
 
-#include "science_controllers/athena_science_manual.hpp"
-#include "science_controllers/athena_science_manual_parameters.hpp"
+#include "athena_science_controllers/athena_science_manual.hpp"
+#include "athena_science_manual_parameters.hpp"
 
 #include <algorithm>
 #include <limits>

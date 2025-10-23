@@ -12,7 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-#include "drive_controllers/single_ackermann_controller.hpp"
+#include "athena_drive_controllers/single_ackermann_controller.hpp"
 
 #include <limits>
 #include <memory>

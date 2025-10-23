@@ -18,7 +18,7 @@
 // [RosTeamWorkspace](https://github.com/StoglRobotics/ros_team_workspace) repository.
 //
 
-#include "drive_controllers/crab_steering_controller.hpp"
+#include "athena_drive_controllers/crab_steering_controller.hpp"
 
 #include <limits>
 #include <memory>

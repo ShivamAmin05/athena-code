@@ -18,9 +18,9 @@
 #include <string>
 #include <vector>
 
-#include "science_controllers/athena_science_manual_parameters.hpp"
+#include "athena_science_manual_parameters.hpp"
 #include "controller_interface/controller_interface.hpp"
-#include "science_controllers/visibility_control.h"
+#include "athena_science_controllers/visibility_control.h"
 #include "rclcpp_lifecycle/node_interfaces/lifecycle_node_interface.hpp"
 #include "rclcpp_lifecycle/state.hpp"
 #include "realtime_tools/realtime_buffer.hpp"

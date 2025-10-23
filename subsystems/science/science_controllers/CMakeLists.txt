@@ -31,7 +31,7 @@ endforeach()
 generate_parameter_library(
   athena_science_manual_parameters
   src/athena_science_manual.yaml
-  include/science_controllers/validate_science_controller_parameters.hpp
+  include/athena_science_controllers/validate_science_controller_parameters.hpp
 )
 
 add_library(
@@ -48,7 +48,7 @@ ament_target_dependencies(athena_science_manual ${THIS_PACKAGE_INCLUDE_DEPENDS})
 target_compile_definitions(athena_science_manual PRIVATE "ATHENA_SCIENCE_MANUAL_BUILDING_DLL")
 
 pluginlib_export_plugin_description_file(
-  controller_interface science_controllers.xml)
+  controller_interface athena_science_controllers.xml)
 
 install(
   TARGETS

@@ -30,22 +30,22 @@ endforeach()
 # Add swerve_drive_controller library related compile commands
 generate_parameter_library(swerve_drive_controller_parameters
   config/swerve_drive_controller.yaml
-  include/drive_controllers/validate_drive_controller_parameters.hpp
+  include/athena_drive_controllers/validate_drive_controller_parameters.hpp
 )
 
 generate_parameter_library(double_ackermann_controller_parameters
   config/double_ackermann_controller.yaml
-  include/drive_controllers/validate_drive_controller_parameters.hpp
+  include/athena_drive_controllers/validate_drive_controller_parameters.hpp
 )
 
 generate_parameter_library(crab_steering_controller_parameters
   config/crab_steering_controller.yaml
-  include/drive_controllers/validate_drive_controller_parameters.hpp
+  include/athena_drive_controllers/validate_drive_controller_parameters.hpp
 )
 
 generate_parameter_library(single_ackermann_controller_parameters
   config/single_ackermann_controller.yaml
-  include/drive_controllers/validate_drive_controller_parameters.hpp
+  include/athena_drive_controllers/validate_drive_controller_parameters.hpp
 )
 
 add_library(
@@ -63,7 +63,7 @@ ament_target_dependencies(drive_controllers ${THIS_PACKAGE_INCLUDE_DEPENDS})
 target_compile_definitions(drive_controllers PRIVATE "SWERVE_DRIVE_CONTROLLER_BUILDING_DLL")
 
 pluginlib_export_plugin_description_file(
-  controller_interface drive_controllers.xml)
+  controller_interface athena_drive_controllers.xml)
 
 install(
   TARGETS
