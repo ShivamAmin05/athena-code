@@ -32,6 +32,12 @@ ARGUMENTS = [
         default_value='default',  
         description='Name of the world inside Gazebo'
     ),
+    DeclareLaunchArgument(
+        'rqt', 
+        default_value='false',
+        choices=['true', 'false'],
+        description='Open RQt.'
+    ),
 ]
 
 def generate_launch_description():
@@ -63,6 +69,13 @@ def generate_launch_description():
             ('world_name', LaunchConfiguration('world_name'))
         ]
     )
+
+    # rqt = Node(
+        # package='rqt_image_view',
+        # executable='rqt_image_view',
+        # arguments=[LaunchConfiguration('image_topic')],
+        # condition=IfCondition(LaunchConfiguration('rqt'))
+    # )
 
     bridge = IncludeLaunchDescription(
         PythonLaunchDescriptionSource([bridge_launch])
@@ -114,6 +127,7 @@ def generate_launch_description():
     ld = LaunchDescription(ARGUMENTS)
     ld.add_action(gazebo)
     ld.add_action(robot_spawn)
+    # ld.add_action(rqt)
     ld.add_action(bridge)
     ld.add_action(control)
     ld.add_action(follow_after_delay)

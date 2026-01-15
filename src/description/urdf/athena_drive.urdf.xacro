@@ -14,7 +14,7 @@
   <xacro:include filename="$(find description)/urdf/athena_drive/athena_drive_macro.ros2_control.xacro"/>
   <xacro:include filename="imu.xacro"/>
   <xacro:include filename="gps.xacro"/>
-  <xacro:include filename="ground_truth_odom.xacro"/>
+  <xacro:include filename="ground_truth_odom.xacro"/> 
   <xacro:include filename="depth_camera.xacro"/> 
 
 
@@ -48,10 +48,10 @@
     <origin xyz="0 0 0.0" rpy="0 0 0"/>
   </xacro:gps_sensor>
 
-  <xacro:ground_truth_odometry/>
+  <xacro:ground_truth_odometry/> 
 
-  <xacro:depth_camera parent_link="base_link"> 
-      <origin xyz="0.75 0 -0.37" rpy="0 0 0"/> 
+  <xacro:depth_camera parent="base_link"> 
+      <origin xyz="0.75 0 -0.37" rpy="0 0 0"/>
   </xacro:depth_camera>
 
   <xacro:if value="$(arg use_mock_hardware)">
